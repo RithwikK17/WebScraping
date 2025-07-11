@@ -1,9 +1,9 @@
 import requests
 import fitz  
 
-def download_pdf(url, filename='downloaded.pdf'):
+def download_pdf(url, filename='download.pdf'):
     response = requests.get(url)
-    response.raise_for_status()  # Ensure download was successful
+    response.raise_for_status()  
     with open(filename, 'wb') as f:
         f.write(response.content)
     print(f"PDF downloaded: {filename}")
