@@ -19,7 +19,7 @@ def extract_text_from_pdf(filename):
     return text
 
 if __name__ == "__main__":
-    # Replace with the actual URL to a PDF
+    
     pdf_url = "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
     
     pdf_file = download_pdf(pdf_url)
